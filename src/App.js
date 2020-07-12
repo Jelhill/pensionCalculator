@@ -31,7 +31,7 @@ const App = () => {
 
     let totalBalance = initialDepositCompound
     
-    for(let i = 0; i < counter ; i++) {
+    for(let i = 0; i < yearsOutstanding * 12; i++) {
       if(counter > 0) {
         compInterest += monthlyContribution * Math.pow(1 + interestRate/12, counter)
         counter = counter - 1
@@ -47,7 +47,6 @@ const App = () => {
   }
   return (    
     <div className="wrapper">
-      {console.log(userInput)}
       <form action="" className="formWrapper">
       <h2 >Pension Calculator</h2>
         <div className="inputDiv">
