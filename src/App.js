@@ -65,7 +65,7 @@ const App = () => {
         
         <div className="sideToSide">
           <div className="tenorDiv">
-            <label>Tenurer</label><br/>
+            <label>Tenure</label><br/>
             <input type="text" name="periodicTenor" value={userInput.yearsOutstanding * 12 } onChange={getInputs}/>
           </div>  
           <div className="rateDiv">

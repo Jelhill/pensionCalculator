@@ -71,7 +71,7 @@ label{
   margin-top: 5px;
 }
 .rateDiv{
-  width: 70%;
+  width: 65%;
 }
 .sideToSide {
   display: flex;
@@ -125,3 +125,10 @@ label{
 button:hover{
 opacity: 0.8;
 }
+
+@media(max-width: 400px) {
+    .formWrapper {
+      width: 97%;
+      margin: auto;
+    }
+} 
