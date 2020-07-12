@@ -22,7 +22,7 @@ const App = () => {
 
   const calculate = (e) => {
     e.preventDefault()
-    const { currentBalance, monthlyContribution, yearsOutstanding, periodicTenor, interestRate} = userInput;  
+    const { currentBalance, monthlyContribution, yearsOutstanding, interestRate} = userInput;  
 
     let counter = yearsOutstanding * 11;
     if(yearsOutstanding > 1) counter = (yearsOutstanding * 12) - 1;
@@ -31,7 +31,7 @@ const App = () => {
 
     let totalBalance = initialDepositCompound
     
-    for(let i = 0; i = counter ; i++) {
+    for(let i = 0; i < counter ; i++) {
       if(counter > 0) {
         compInterest += monthlyContribution * Math.pow(1 + interestRate/12, counter)
         counter = counter - 1
