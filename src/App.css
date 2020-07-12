@@ -104,7 +104,7 @@ label{
   background-color: #4C97E2 ;
   color: #F4F6F6;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   margin-top: 20px;
@@ -116,7 +116,7 @@ label{
   background-color: #E2C04C;
   color: #F4F6F6;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   margin-top: 20px;
@@ -128,7 +128,10 @@ opacity: 0.8;
 
 @media(max-width: 400px) {
     .formWrapper {
-      width: 97%;
-      margin: auto;
+      width: 100%;
     }
+    .wrapper{
+      background-color: #D5DBDB;
+    }
+
 } 
